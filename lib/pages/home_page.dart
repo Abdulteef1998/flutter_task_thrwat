@@ -16,13 +16,24 @@ class HomeScreen extends StatelessWidget {
               color: Color(0xFFDCEEFF),
               height: 120,
               width: double.infinity,
+              margin: EdgeInsets.only(right: 5),
             ),
-
+            SizedBox(height: 5),
             Row(
               children: const [
-                ColorBox(color: Color(0xFFE0E0E0), height: 25, width: 20),
+                ColorBox(
+                  color: Color(0xFFE0E0E0),
+                  height: 25,
+                  width: 20,
+                  margin: EdgeInsets.only(right: 5),
+                ),
                 SizedBox(width: 1),
-                ColorBox(color: Color(0xFFE0E0E0), height: 20, width: 340),
+                ColorBox(
+                  color: Color(0xFFE0E0E0),
+                  height: 25,
+                  width: 340,
+                  margin: EdgeInsets.only(left: 16),
+                ),
               ],
             ),
 
@@ -36,8 +47,21 @@ class HomeScreen extends StatelessWidget {
                 Expanded(
                   child: Column(
                     children: [
-                      ColorBox(color: Color(0xFFA5D6A7), height: 50),
-                      ColorBox(color: Color(0xFFA5D6A7), height: 50),
+                      ColorBox(
+                        color: Color(0xFFA5D6A7),
+                        height: 55,
+                        margin: EdgeInsets.all(0),
+                      ),
+                      ColorBox(
+                        color: Color(0xFFE7F6EA),
+                        height: 5,
+                        margin: EdgeInsets.all(0),
+                      ),
+                      ColorBox(
+                        color: Color(0xFFA5D6A7),
+                        height: 55,
+                        margin: EdgeInsets.all(0),
+                      ),
                     ],
                   ),
                 ),
@@ -46,6 +70,11 @@ class HomeScreen extends StatelessWidget {
                     children: [
                       Expanded(
                         child: ColorBox(color: Color(0xFFFFCC80), height: 115),
+                      ),
+                      ColorBox(
+                        color: Color(0xFFE7F6EA),
+                        height: 115,
+                        margin: EdgeInsets.all(0),
                       ),
                       Expanded(
                         child: ColorBox(color: Color(0xFFFFCC80), height: 115),
@@ -59,7 +88,11 @@ class HomeScreen extends StatelessWidget {
             Row(
               children: const [
                 Expanded(
-                  child: ColorBox(color: Color(0xFFE1BEE8), height: 100),
+                  child: ColorBox(
+                    color: Color(0xFFE1BEE8),
+                    height: 100,
+                    margin: EdgeInsets.only(left: 0),
+                  ),
                 ),
                 Expanded(
                   child: Column(
@@ -89,7 +122,13 @@ class HomeScreen extends StatelessWidget {
 
             Row(
               children: const [
-                Expanded(child: ColorBox(color: Color(0xFFB2DFDC), height: 70)),
+                Expanded(
+                  child: ColorBox(
+                    color: Color(0xFFB2DFDC),
+                    height: 70,
+                    margin: EdgeInsets.only(right: 5),
+                  ),
+                ),
                 Expanded(child: ColorBox(color: Color(0xFF80CBC4), height: 70)),
               ],
             ),
@@ -98,6 +137,7 @@ class HomeScreen extends StatelessWidget {
               color: Color(0xFFE0E0E0),
               height: 50,
               width: double.infinity,
+              margin: EdgeInsets.only(right: 5),
             ),
           ],
         ),

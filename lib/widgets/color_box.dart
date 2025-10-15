@@ -4,14 +4,14 @@ class ColorBox extends StatelessWidget {
   final Color color;
   final double? width;
   final double? height;
-  final EdgeInsetsGeometry? margin; // ✅ أضفنا خاصية margin اختيارية
+  final EdgeInsetsGeometry? margin;
 
   const ColorBox({
     super.key,
     required this.color,
     this.width,
     this.height,
-    this.margin, // ✅ الآن يمكن تمريرها من الخارج
+    this.margin,
   });
 
   @override
@@ -19,8 +19,7 @@ class ColorBox extends StatelessWidget {
     return Container(
       width: width,
       height: height,
-      margin:
-          margin ?? const EdgeInsets.all(6), // ✅ قيمة افتراضية 6 إن لم تُمرّر
+      margin: margin ?? const EdgeInsets.all(6),
       decoration: BoxDecoration(color: color),
     );
   }
